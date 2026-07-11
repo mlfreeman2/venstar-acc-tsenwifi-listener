@@ -17,6 +17,15 @@ body:
       placeholder: "0.1.0"
     validations:
       required: true
+  - type: dropdown
+    id: install-method
+    attributes:
+      label: Install method
+      options:
+        - HACS (custom repository)
+        - Manual copy
+    validations:
+      required: true
   - type: textarea
     id: what-happened
     attributes:
