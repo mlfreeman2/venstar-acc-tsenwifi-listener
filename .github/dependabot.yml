@@ -4,6 +4,11 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    # The minimum Home Assistant version is a deliberate support floor
+    # (declared in hacs.json and requirements-dev.txt), not something to bump
+    # automatically — ignore homeassistant itself.
+    ignore:
+      - dependency-name: "homeassistant"
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:

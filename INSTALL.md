@@ -6,7 +6,7 @@ This guide covers installing the Venstar ACC-TSENWIFI Listener integration into 
 
 ## Prerequisites
 
-- Home Assistant 2025.7.1 or newer.
+- Home Assistant 2026.4.4 or newer.
 - Physical ACC-TSENWIFI / ACC-TSENWIFIPRO sensors (or the [emulator](https://github.com/mlfreeman2/venstar-acc-tsenwifi-emulator) / the [C# app](https://github.com/mlfreeman2/venstartranslator)) broadcasting on the **same VLAN/broadcast domain** as Home Assistant.
 - If Home Assistant runs in Docker: `network_mode: host` (broadcasts do not cross a bridged network).
 
@@ -100,7 +100,7 @@ It is still transmitting, so it is rediscovered. Power the sensor off, or — if
 
 ### Integration won't load
 
-- **Home Assistant version**: must be 2025.7.1+. On older versions the bundled protobuf gencode refuses to load (a `VersionError` mentioning "gencode" and "runtime" versions) because HA ships an older `protobuf` runtime.
+- **Home Assistant version**: must be 2026.4.4+. On Home Assistant older than 2025.7.1 the bundled protobuf gencode refuses to load (a `VersionError` mentioning "gencode" and "runtime" versions) because those releases ship an older `protobuf` runtime.
 - **Files**: ensure `protobuf/sensor_message_pb2.py` and `protobuf/__init__.py` are present.
 
 ### Debug logging
