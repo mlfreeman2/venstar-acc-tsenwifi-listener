@@ -46,9 +46,13 @@ body:
     attributes:
       label: Debug log (if relevant)
       description: |
+        Enable debug logging per [DEBUG_LOGGING.md](https://github.com/mlfreeman2/venstar-acc-tsenwifi-listener/blob/main/DEBUG_LOGGING.md):
+
         ```yaml
         logger:
           logs:
             custom_components.venstar_acc_tsenwifi_listener: debug
         ```
+
+        Restart HA, reproduce the problem, and paste the relevant log lines.
       render: text
