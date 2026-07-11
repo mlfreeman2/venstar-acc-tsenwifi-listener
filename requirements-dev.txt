@@ -1,4 +1,8 @@
 # Development environment: a runnable Home Assistant plus the integration's
 # runtime dependency (manifest requirements are not auto-installed in dev).
+#
+# NOTE: this pin conflicts with the exact homeassistant version the test
+# harness (requirements-test.txt) brings in via its PHACC pin — install one or
+# the other into a venv, not both at once. See scripts/setup.
 homeassistant>=2026.4.4
 protobuf>=6.31.1,<8
