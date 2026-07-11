@@ -4,6 +4,16 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    ignore:
+      # The minimum Home Assistant version is a deliberate support floor
+      # (declared in hacs.json and requirements-dev.txt), not something to bump
+      # automatically — ignore homeassistant itself.
+      - dependency-name: "homeassistant"
+      # Home Assistant pins protobuf to 6.x (2026.4.x ships protobuf==6.32.0),
+      # so the integration must stay on 6.x — a major bump to 7.x would be
+      # unsatisfiable against HA's constraint. Allow 6.x minor/patch bumps.
+      - dependency-name: "protobuf"
+        update-types: ["version-update:semver-major"]
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:

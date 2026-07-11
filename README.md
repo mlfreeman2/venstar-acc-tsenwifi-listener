@@ -44,7 +44,7 @@ Copy `custom_components/venstar_acc_tsenwifi_listener/` into your Home Assistant
 
 ## Requirements
 
-- Home Assistant 2025.7.1 or newer. The bundled protobuf code needs the `protobuf` 6.31.1+ runtime that HA 2025.7.1 started shipping, and `single_config_entry` requires a reasonably recent HA.
+- Home Assistant 2026.4.4 or newer. The bundled protobuf code needs the `protobuf` 6.31.1+ runtime that HA 2025.7.1 started shipping, and `single_config_entry` requires a reasonably recent HA.
 - Physical ACC-TSENWIFI(PRO) sensors (or the emulator / the C# app) broadcasting on the same network segment.
 
 ## Debug logging
