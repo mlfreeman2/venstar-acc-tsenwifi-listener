@@ -4,4 +4,4 @@
 pytest
 pytest-asyncio
 pytest-homeassistant-custom-component
-protobuf>=6.31.1,<8
+protobuf>=7.35.1,<8
