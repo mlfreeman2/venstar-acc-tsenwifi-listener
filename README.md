@@ -63,6 +63,10 @@ The integration also exposes **config-entry diagnostics** (integration → **⋮
 
 ## Development
 
+Development and tests use Python 3.14 (at least 3.14.2) and Home Assistant 2026.4.4.
+`scripts/setup` installs the pinned test harness and HA. When updating an existing
+checkout, rebuild the devcontainer to pick up the Python version change.
+
 A devcontainer is included. Open this repository in VS Code, reopen in the container, then:
 
 - `scripts/develop` — run a Home Assistant instance (port 8123) with this integration mounted.
